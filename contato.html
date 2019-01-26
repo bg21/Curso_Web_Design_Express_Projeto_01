@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Site responsivo</title>
+	<meta name="viewport" content="width-device-width,initial-scale=1.0,maximum-scale=1.0"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilo.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+<body>
+	<header>
+		<div class="container">
+		<div class="logo">
+			<a href="index.html"><h2>LogoMarca</h2></a>
+		</div>
+		<nav class="menu">
+
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="sobre.html">Sobre</a>
+				</li>
+				<li class="selected">
+					<a href="contato.html">Contato</a>
+				</li>
+			</ul>
+		</nav>
+		<nav class="mobile">
+			<h2><i class="fa fa-bars"></i></h2>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="sobre.html">Sobre</a>
+				</li>
+				<li class="selected">
+					<a href="contato.html">Contato</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="clear"></div>
+	</div>
+	</header>
+
+	<section style="background-image: url(img/33_0.jpg);" class="sobre_bg">
+		<div class="container">
+			<h2>Contato</h2>
+				<p>
+					Descrição da empresa, anos no mercado, clientes
+				</p>
+		</div>
+	</section>
+
+	<section class="form">
+		<div class="container">
+			<div class="w60 formulario">
+				<h2>Entre em contato</h2>
+				<form method="post">
+					<div class="w50">
+						<input type="text" name="nome" placeholder="Nome">
+					</div>
+					<div class="w50">
+						<input type="text" name="sobrenome" placeholder="Sobrenome">
+					</div>
+					<div class="w100">
+						<input type="email" name="email" placeholder="Email">
+					</div>
+					<div class="w100">
+						<textarea placeholder="Sua mensagem"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="w40 tags">
+				<h3><i class="fa fa-comments" aria-hidden="true"></i>Fale com a nossa equipe</h3>
+				<p>kaskdfkahs dfhahs dfhlah sdfhah hldflahsh lfdhladsflh</p>
+				<p class="tag_p">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					Facebook
+				</p>
+				<p class="tag_p">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					Twitter
+				</p>
+				<p class="tag_p">
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+					Instagram
+				</p>
+				<p class="tag_p">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					Telefone - (61 - 8879-8877)
+				</p>
+			</div>	
+
+
+			<div class="clear"></div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+	
+	<footer class="footer1">
+		<div class="container">
+			<div class="w33">
+				<h3>Aonde estamos</h3>
+				<p>Rua</p>
+				<p>Telefone</p>
+			</div>
+			<div class="w33">
+				<h3>Links Úteis</h3>
+				<a href="">Sobre</a>
+				<a href="">Contato</a>
+			</div>
+			<div class="w33">
+				<h3>Conecte-se conosco</h3>
+				<div class="group-icons">
+					<a href="">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</footer>
+	<footer class="footer2">
+		<div class="container">
+		<h3>Todos os direitos reservados.</h3>
+	</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		$('nav.mobile h2').click(function(){
+			$('nav.mobile ul').slideToggle();
+		});
+	</script>
+</body>
+</html>
